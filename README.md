@@ -2,9 +2,11 @@
 📌 Project Overview
 
 Customer retention is one of the biggest challenges in the banking industry. Churn (or attrition) refers to customers leaving the bank and discontinuing their services. Even a small increase in churn rate can lead to significant revenue loss and negatively impact brand reputation.
+
 This project focuses on building a machine learning model that can predict whether a bank’s customer is likely to exit or not, based on their profile and past behavior. By anticipating churn, banks can take proactive measures to retain valuable clients.
 
 📊 Dataset Information
+
 We use the Churn Modelling dataset available on Kaggle. It contains 10,000 customer records and 14 attributes.
 
 Data Dictionary
@@ -24,45 +26,72 @@ HasCrCard	1 = owns a credit card, 0 = does not
 IsActiveMember	1 = active customer, 0 = inactive
 EstimatedSalary	Customer’s estimated income
 Exited	Target variable: 1 = customer left, 0 = customer stayed
-
 🔄 Project Workflow
 
-The approach to solve the problem is structured as follows:
-Data Preprocessing
+The problem is tackled using the following structured approach:
+
+1. Data Preprocessing
+
 Handle missing values (if any)
+
 Encode categorical variables (e.g., Gender, Geography)
+
 Scale numerical features for better model performance
-Train-Test Split
+
+2. Train-Test Split
+
 70% training data
+
 30% testing data
-Feature Engineering
+
+3. Feature Engineering
+
 Create meaningful transformations (e.g., interaction features, scaling)
+
 Select important predictors
-Model Building
-Try multiple ML algorithms: Logistic Regression, Random Forest, Gradient Boosting, Neural Networks
-Compare results across models
-Model Evaluation
+
+4. Model Building
+
+Train multiple ML algorithms:
+
+Logistic Regression
+
+Random Forest
+
+Gradient Boosting
+
+Neural Networks
+
+Compare performance across models
+
+5. Model Evaluation
+
 Accuracy on training vs. testing data
+
 Confusion matrix, precision, recall, F1-score, ROC-AUC curve
+
 Check for overfitting or underfitting
 
-
-🎯 Objective
+🎯 Objectives
 
 Predict the probability of a customer leaving the bank.
-Help the bank identify at-risk customers early.
-Provide insights into which features influence churn the most.
 
+Help the bank identify at-risk customers early.
+
+Provide insights into which features influence churn the most.
 
 🛠️ Tech Stack
 
-Python (NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn)
-Jupyter Notebook for analysis and experimentation
-Machine Learning Algorithms (Logistic Regression, Decision Trees, Random Forests, XGBoost, etc.)
+Python: NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn
 
+Jupyter Notebook for experimentation and analysis
 
-📌 Key Insights (to be added after model training)
+Machine Learning Models: Logistic Regression, Decision Trees, Random Forests, XGBoost, Neural Networks
 
-Which factors strongly influence churn (e.g., Age, Tenure, Activity Status).
-Performance comparison of different models.
-Final recommendation for the bank’s retention strategy.
+📌 Key Insights (to be added after training)
+
+Factors strongly influencing churn (e.g., Age, Tenure, Activity Status).
+
+Model performance comparison and selection.
+
+Final recommendation for improving retention strategy.
