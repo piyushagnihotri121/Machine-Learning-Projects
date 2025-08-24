@@ -10,22 +10,26 @@ This project focuses on building a machine learning model that can predict wheth
 We use the Churn Modelling dataset available on Kaggle. It contains 10,000 customer records and 14 attributes.
 
 Data Dictionary
-Feature	Description
-RowNumber	Row index (not useful for modeling)
-CustomerId	Unique identifier for each customer
-Surname	Customer’s last name
-CreditScore	Creditworthiness of the customer
-Geography	Country of residence
-City_Category	City type (A, B, or C)
-Gender	Male or Female
-Age	Customer’s age
-Tenure	Number of years as a bank client
-Balance	Account balance
-NumOfProducts	Number of bank products used
-HasCrCard	1 = owns a credit card, 0 = does not
-IsActiveMember	1 = active customer, 0 = inactive
-EstimatedSalary	Customer’s estimated income
-Exited	Target variable: 1 = customer left, 0 = customer stayed
+
+| Feature         | Description                                                 |
+| --------------- | ----------------------------------------------------------- |
+| RowNumber       | Row index (not useful for modeling)                         |
+| CustomerId      | Unique identifier for each customer                         |
+| Surname         | Customer’s last name                                        |
+| CreditScore     | Creditworthiness of the customer                            |
+| Geography       | Country of residence                                        |
+| City\_Category  | City type (A, B, or C)                                      |
+| Gender          | Male or Female                                              |
+| Age             | Customer’s age                                              |
+| Tenure          | Number of years as a bank client                            |
+| Balance         | Account balance                                             |
+| NumOfProducts   | Number of bank products used                                |
+| HasCrCard       | 1 = owns a credit card, 0 = does not                        |
+| IsActiveMember  | 1 = active customer, 0 = inactive                           |
+| EstimatedSalary | Customer’s estimated income                                 |
+| **Exited**      | **Target variable: 1 = customer left, 0 = customer stayed** |
+
+
 🔄 Project Workflow
 
 The problem is tackled using the following structured approach:
